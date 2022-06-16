@@ -1,0 +1,23 @@
+[name]
+model_name=fast-lagori-id 
+
+[train-configure]
+epochs=300
+steps=150,250             
+batch_size=64           
+subdivisions=1            
+learning_rate=0.001       
+
+[model-configure]
+pre_weights=None          
+classes=1                 
+width=352                 
+height=352                
+anchor_num=3              
+anchors=16.00,25.63, 33.57,52.22, 52.80,73.50, 140.95,81.10, 249.44,110.58, 315.03,225.31
+
+[data-configure]
+train=/home/lusamreth/silly-python/Yolo-FastestV2/training/train.txt   
+val=/home/lusamreth/silly-python/Yolo-FastestV2/training/val.txt       
+names=/home/lusamreth/silly-python/Yolo-FastestV2/training/category.names
+
